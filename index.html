@@ -24,6 +24,20 @@
             background-color: var(--light-bg);
         }
 
+        .header-image-container {
+            width: 100%;
+            display: flex; /* Statt Block, um Flexbox für Zentrierung zu nutzen */
+            justify-content: center;
+            margin: 2rem 0; /* Fügt Abstand über und unter dem Bild hinzu */
+        }
+
+        .header-image {
+            max-width: 900px; /* Begrenzt die Bildbreite, um Qualitätsverlust zu vermeiden */
+            width: 100%; /* Passt sich auf kleineren Bildschirmen an */
+            height: auto;
+            display: block;
+        }
+
         .hero {
             background: var(--dark-color);
             color: var(--white);
@@ -178,7 +192,7 @@
         .sponsor-logo:hover {
             transform: scale(1.05);
         }
-
+        
         footer {
             background-color: var(--dark-color);
             color: var(--white);
@@ -200,6 +214,10 @@
     </style>
 </head>
 <body>
+    <div class="header-image-container">
+        <img src="https://www.dropbox.com/scl/fi/4dimhepx168kc2qput3e3/kletterchallenge.png?rlkey=5u98k6t4o6n2sg3i47yvqom3y&st=93367fqy&raw=1" alt="Kletterchallenge Flyer" class="header-image">
+    </div>
+
     <header class="hero">
         <h1>Dein Gipfel. Dein Ziel. Deine Spende.</h1>
         <p>Ein Kletter-Spendenmarathon, bei dem du deine Leidenschaft für eine Herzensangelegenheit einsetzt. Unterstütze, wen immer du möchtest – jeder Höhenmeter zählt!</p>
@@ -243,7 +261,7 @@
             <h2>Hauptsponsor ✨</h2>
             <p>Ein riesiges Dankeschön an unseren Hauptsponsor, der diese Aktion erst möglich macht:</p>
             <a href="https://vorwärtsdenken.de/" target="_blank">
-                <img src="https://www.dropbox.com/scl/fi/in96ygcni87129cpfn1v4/vorw-rtsdenken.png?rlkey=rw4pfmmw1hyu2416gcujqwkb7&e=1&st=hjlcckv3&raw=1" alt="VORWÄRTSDENKEN.de Logo" class="sponsor-logo">
+            <img src="https://www.dropbox.com/scl/fi/in96ygcni87129cpfn1v4/vorw-rtsdenken.png?rlkey=rw4pfmmw1hyu2416gcujqwkb7&e=1&st=hjlcckv3&raw=1" alt="VORWÄRTSDENKEN.de Logo" class="sponsor-logo">
             </a>
             <p><span class="highlight">VORWÄRTSDENKEN.de</span> – steht für innovative Ideen und soziales Engagement, perfekt passend zu unserem Spendenmarathon!</p>
         </section>
